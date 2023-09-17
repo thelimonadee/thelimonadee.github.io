@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/13750018.jpg);
+    background-size: 85%; /* Scale the image to fit within the container */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-attachment: fixed;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    background-color: rgba(245, 245, 245, 0.8); /*look up opacity*/
+    padding: 5px; 
+    margin-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: #800000;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 16px; 
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+/* about section */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 80%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Education section */
+#education {
+    padding: 80px 0;
+    background-color: #080808; /* Background color for the education section */
+    color: #fff;
+    text-align: center; /* Center the content horizontally */
+}
+
+.education-title {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    gap: 15px; /* Adjust the gap as needed */
+}
+
+.image-wrapper {
+    text-align: center; /* Center text horizontally */
+    max-width: 30%; /* Adjust the width as needed */
+}
+
+.image-wrapper img {
+    max-width: 70%; /* Adjust the width as needed */
+}
+
+h3,
+p {
+    margin: 0; /* Remove default margins */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* experiences section */
+
+/* Style the sections */
+.section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #080808;
+    border-radius: 5px;
+}
+
+/* Style the section titles */
+.section-title {
+    background-color: #080808;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+/* Style the section content */
+.section-content {
+    padding: 10px;
+}
+
+/* Style individual work experiences */
+.experience {
+    margin-bottom: 20px;
+}
+
+/* Style headings and paragraphs within work experiences */
+.experience h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+
