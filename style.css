@@ -12,10 +12,11 @@ body{
     width: 100%;
     height: 100vh;
     background-image: url(images/13750018.jpg);
-    background-size: 85%; /* Scale the image to fit within the container */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-position: center center; /* Center the image horizontally and vertically */
+    background-size: 85%; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
     background-attachment: fixed;
+    
 }
 .container{
     padding: 10px 10%;
@@ -26,7 +27,7 @@ nav {
     align-items: center;
     justify-content: center; 
     flex-wrap: wrap;
-    background-color: rgba(245, 245, 245, 0.8); /*look up opacity*/
+    background-color: rgba(247, 243, 243, 0.9); /*look up opacity*/
     padding: 5px; 
     margin-top: 40px;
 }
@@ -68,7 +69,7 @@ nav ul li a:hover::after {
 
 .header-text{
     margin-top: 15%;
-    font-size: 30px;
+    font-size: 29px;
 }
 
 /* about section */
@@ -102,9 +103,9 @@ nav ul li a:hover::after {
 /* Education section */
 #education {
     padding: 80px 0;
-    background-color: #080808; /* Background color for the education section */
+    background-color: #080808; 
     color: #fff;
-    text-align: center; /* Center the content horizontally */
+    text-align: center; 
 }
 
 .education-title {
@@ -116,28 +117,25 @@ nav ul li a:hover::after {
 .image-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
-    gap: 15px; /* Adjust the gap as needed */
+    align-items: flex-start; 
+    gap: 15px; 
 }
 
 .image-wrapper {
-    text-align: center; /* Center text horizontally */
-    max-width: 30%; /* Adjust the width as needed */
+    text-align: center; 
+    max-width: 30%; 
 }
 
 .image-wrapper img {
-    max-width: 70%; /* Adjust the width as needed */
+    max-width: 50%; 
 }
-
 h3,
 p {
-    margin: 0; /* Remove default margins */
-    font-size: 18px; /* Adjust font size as needed */
+    margin: 0; 
+    font-size: 18px; 
 }
 
 /* experiences section */
-
-/* Style the sections */
 .section {
     padding: 20px;
     border: 1px solid #ccc;
@@ -146,7 +144,7 @@ p {
     border-radius: 5px;
 }
 
-/* Style the section titles */
+
 .section-title {
     background-color: #080808;
     color: #fff;
@@ -155,17 +153,17 @@ p {
     text-align: center;
 }
 
-/* Style the section content */
+
 .section-content {
     padding: 10px;
 }
 
-/* Style individual work experiences */
+
 .experience {
     margin-bottom: 20px;
 }
 
-/* Style headings and paragraphs within work experiences */
+
 .experience h3 {
     font-size: 18px;
     font-weight: bold;
@@ -175,6 +173,110 @@ p {
 .experience p {
     font-size: 16px;
     margin-bottom: 5px;
+}
+
+/* contact section */
+/* icons found on fontawesome */ 
+ .contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ababab;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2 {
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 20px; 
+    color: #080808; 
+    text-decoration: none; 
+}
+
+.btn.btn2:hover {
+    background: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 20px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+.form.btn2:hover {
+    background: #ff004f;
+    transform: translateY(-5px);
+}
+
+/* testimonials */ 
+.testimonials {
+    text-align: center;
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 25px;
+    color: #666;
 }
 
 
